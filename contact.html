@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <p>Skill Bridge</p>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-xmark"></i>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a class="active" href="#">Contact</a></li>
+                <li><button type="button" onclick="home()">Logout</button> </li>
+            </ul>
+            <img id="menu-button" src="images/menu.png" alt="">
+        </div>
+    </nav>
+    <section id="about-home">
+        <h2>Contact Us</h2>
+    </section>
+
+    <section id="contact">
+        <div class="getin">
+            <h2>Get in touch</h2>
+            <p>Looking for help? Fill the form and start a new adventure.</p>
+            <div class="getin-details">
+                <h3>Headquarters</h3>
+                <div>
+                    <i class="fa-solid fa-house get"></i>
+                    <p>Krishnagar-741101</p>
+                </div>
+                <h3>Phone</h3>
+                <div>
+                    <i class="fas fa-phone-alt get"></i>
+                    <p>(+91) 8392069572 <br>(+91) 6295000878<br>(+91) 9134002217</p>
+                </div>
+                <h3>Support</h3>
+                <div>
+                    <i class="fa-solid fa-envelope get"></i>
+                    <p>arnabbiswas948@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <h4>Let's Connect</h4>
+            <p>Contact Us for any type of query</p>
+            <form action="contact.php" method="post">
+                <div class="form-row">
+                    <input type="text" name="te" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-col">
+                    <textarea name="comment" id="30" rows="8"placeholder="How we can Help?"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputations</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Home</li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputations</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputations</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us.We only send promo offers</p>
+            <div class="em">
+                <input type="email" placeholder="Your Email Address">
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy;2025 All rights reserved.</p>
+        </div>
+
+    </footer>
+    <script>
+        $('#menu-button').click(function(){
+            $('nav .navigation ul').addClass('active')
+        });
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+</body>
+</html>

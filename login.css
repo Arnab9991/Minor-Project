@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background-color: #fff;
+}
+
+.wrapper{
+    width: 350px;
+    height: 400px;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow:0 0 30px rgba(0,0,0,.5);
+    display: flex;
+    margin:70px auto 0 auto;
+}
+
+.wrapper h2{
+    font-size:30px;
+    padding-left: 70px;
+    padding-top: 20px;
+    color: #3c00ff;
+}
+
+.form-box-login{
+    width:330px;
+    height: 350px;
+    border-radius: 10px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-left: 45px;
+}
+.form-box-login input{
+    width:240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #3c00ff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.form-box-login input:focus{
+    outline: none;
+}
+.form-box-login input::placeholder{
+    font-weight: bold;
+    color: rgb(91,78,78);
+}
+.btnn{
+    width: 240px;
+    height: 40px;
+    background:blue;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background:#10287d;
+    color:#ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+}
+.form-box-login .login-link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    padding-right: 35px;
+    text-align: center;
+}
+.form-box-login .login-link a{
+    text-decoration: none;
+    color:blue;
+    font-weight: bold;
+}
+
+.b{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.b button{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    border:none;
+    background-color:#0000ff;
+    font-weight: 700;
+    color:#fff;
+    cursor: pointer;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <p>Skill Bridge</p>
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-xmark"></i>
+                <li><a href="main.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button type="button" onclick="home()">Logout</button> </li>
+            </ul>
+            <img id="menu-button" src="images/menu.png" alt="">
+        </div>
+    </nav>
+    <section id="about-home">
+        <h2>About Skill Bridge</h2>
+    </section>
+
+    <section id="about-container">
+        <div class="about-img">
+            <img src="images/a.png">
+        </div>
+        <div class="about-text">
+            <h2>Welcome to Skill Bridge,Enhance your skills with best Online Courses</h2>
+            <p>You can start and finish one of these popular courses in under a day for free!
+            Check out the list below.. Take the course for free.</p>
+            <div class="about-fe">
+                <img src="images/fe1.png" alt="">
+                <div class="fe-text">
+                    <h5>200+ courses</h5>
+                    <p>You can start and finish these popular courses under our site</p>
+                </div>
+            </div>
+            <div class="about-fe">
+                <img src="images/fe2.png" alt="">
+                <div class="fe-text">
+                    <h5>Lifetime Access</h5>
+                    <p>You can start and finish these popular courses under our site</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trust" >
+        <h1>Trusted By</h1>
+        <p></p>
+        <div class="trust-image">
+            <img src="images/trust (1).png"alt="">
+            <img src="images/trust (2).png"alt="">
+            <img src="images/trust (3).png"alt="">
+            <img src="images/trust (4).png"alt="">
+            <img src="images/trust (5).png"alt="">
+            <img src="images/trust (6).png"alt="">
+        </div>
+    </section>
+    <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputations</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Home</li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputations</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputations</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us.We only send promo offers</p>
+            <div class="em">
+                <input type="email" placeholder="Your Email Address">
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy;2025 All rights reserved</p>
+        </div>
+
+    </footer>
+    <script>
+        $('#menu-button').click(function(){
+            $('nav .navigation ul').addClass('active')
+        });
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+</body>
+</html>
